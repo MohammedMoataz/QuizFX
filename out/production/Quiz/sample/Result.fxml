@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Result">
+    <VBox prefHeight="700.0" prefWidth="500.0">
+        <TableView fx:id="table" focusTraversable="false" prefHeight="600.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="answersCol" prefWidth="250.0" text="Your answers"/>
+                <TableColumn fx:id="correctCol" prefWidth="250.0" text="Correct answers"/>
+            </columns>
+        </TableView>
+        <Label fx:id="label" alignment="CENTER" prefHeight="100.0" prefWidth="500.0" textAlignment="CENTER">
+            <font>
+                <Font name="Century Gothic" size="18.0"/>
+            </font>
+        </Label>
+    </VBox>
+</AnchorPane>
